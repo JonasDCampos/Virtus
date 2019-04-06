@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="config4.css">
+
+ 
+  <script language="JScript">
+      function ValidarCampos()
+  {
+        if(document.frmCadastro.txtEmail.value=='' && document.frmCadastro.txtMsg.value==''){
+
+        alert('Deu errado!');
+          }else{
+            alert('Deu certo!');
+            document.frmCadastro.txtEmail.value='';
+            document.frmCadastro.txtMsg.value='';
+          }
+return false;
+  }
+
+</script>
+
+
+
+</head>
+<body>
+<div id="contatoF">
+
+      <FORM NAME="frmCadastro" METHOD="post" ACTION="contato.html">
+        <br><textarea name="txtEmail"class='autoExpand' rows='1' data-min-rows='1' placeholder='Email'></textarea>
+
+
+        <textarea name="txtMsg"class='autoExpand' rows='3' data-min-rows='3' placeholder='Mensagem'></textarea>
+
+
+        <a name="btnEnviar" type="button" href="#" onClick="ValidarCampos();" class="btn" >Enviar</a>
+        <a href="index.html" class="btn">Voltar</a>
+      </FORM>
+
+</div>
+
+</body>
+
+
+</html>
